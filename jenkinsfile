@@ -7,21 +7,21 @@ stages
      {
       steps
       {
-       //code
+       git branch: 'dev2', url: 'https://git@github.com:Akhilprakashm/newproject.git'
       }
      }
     stage("cont_build")
     {
      steps
     {
-    //code
+    sh 'mvn package'
     }
     }
     stage("cont_test")
     {
     steps
     {
-    //code
+      deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: '8e450dea-8be1-4f3b-a969-b7116c4db32b', path: '', url: 'http://172.31.47.14:8080')], contextPath: 'multi2', war: '**/*.war'
     }
     }
   }
