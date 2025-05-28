@@ -7,7 +7,7 @@ stages
      {
       steps
       {
-       git branch: 'dev1', url: 'https://git@github.com:Akhilprakashm/newproject.git'
+       git branch: 'dev1', url: 'https://github.com/Akhilprakashm/newproject'
       }
      }
     stage("cont_build")
