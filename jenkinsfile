@@ -1,0 +1,28 @@
+pipeline
+{
+agent any
+stages
+  {
+     stage("cont_downld")
+     {
+      steps
+      {
+       //code
+      }
+     }
+    stage("cont_build")
+    {
+     steps
+    {
+    //code
+    }
+    }
+    stage("cont_test")
+    {
+    steps
+    {
+    //code
+    }
+    }
+  }
+}
